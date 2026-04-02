@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahit Mevada | Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cursor Follower -->
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">M</div>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+            <p class="preloader-text">Loading Experience...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Mahit</span>
+                <span class="logo-dot">.</span>
+                <span class="logo-text2">dev</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#contact" class="nav-cta">Hire Me</a>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-elements">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="grid-bg"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Available for Freelance Work
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Hi, I'm</span>
+                    <span class="title-name">Mahit Mevada</span>
+                    <span class="title-role" id="typingText"></span>
+                    <span class="typing-cursor">|</span>
+                </h1>
+                <p class="hero-description">
+                    I craft <strong>beautiful digital experiences</strong> that combine stunning design 
+                    with clean, efficient code. Passionate about turning complex problems into 
+                    simple, elegant solutions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>Let's Talk</span>
+                        <i class="fas fa-comments"></i>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="25">0</span>
+                        <span class="stat-plus">+</span>
+                        <span class="stat-label">Projects Done</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="15">0</span>
+                        <span class="stat-plus">+</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="3">0</span>
+                        <span class="stat-plus">+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ====================== -->
+            <!-- 🖼️ YOUR PHOTO IS HERE  -->
+            <!-- ====================== -->
+            <div class="hero-visual">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-border"></div>
+                    <div class="hero-image">
+                        <!-- ✅ YOUR PHOTO UPDATED HERE -->
+                        <img 
+                            src="mahit-photo.jpg" 
+                            alt="Mahit Mevada - Web Developer & Designer"
+                            loading="eager"
+                        >
+                    </div>
+                    <div class="floating-card card-1">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fab fa-js-square"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="floating-card card-4">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-user"></i> Get To Know</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-side" data-aos="fade-right">
+                    <div class="about-image-card">
+                        <!-- ====================== -->
+                        <!-- 🖼️ YOUR PHOTO IS HERE  -->
+                        <!-- ====================== -->
+                        <div class="about-avatar-large">
+                            <!-- ✅ YOUR PHOTO UPDATED HERE TOO -->
+                            <img 
+                                src="mahit-photo.jpg"
+                                alt="Mahit Mevada"
+                                loading="lazy"
+                            >
+                        </div>
+                        <div class="experience-badge">
+                            <span class="exp-number">3+</span>
+                            <span class="exp-text">Years<br>Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content-side" data-aos="fade-left">
+                    <div class="about-cards">
+                        <div class="about-card">
+                            <i class="fas fa-award"></i>
+                            <h3>Experience</h3>
+                            <p>3+ Years Working</p>
+                        </div>
+                        <div class="about-card">
+                            <i class="fas fa-users"></i>
+                            <h3>Clients</h3>
+                            <p>15+ Worldwide</p>
+                        </div>
+                        <div class="about-card">
+                            <i class="fas fa-folder-open"></i>
+                            <h3>Projects</h3>
+                            <p>25+ Completed</p>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            I am a passionate <strong>Web Developer & Designer</strong> dedicated to creating 
+                            impactful digital experiences. With expertise in modern web technologies, 
+                            I transform ideas into reality through clean code and intuitive design.
+                        </p>
+                        <p>
+                            My approach combines <strong>creative design thinking</strong> with 
+                            <strong>technical excellence</strong>, ensuring every project not only looks 
+                            stunning but also performs flawlessly across all devices.
+                        </p>
+                    </div>
+                    <div class="about-info-grid">
+                        <div class="info-item">
+                            <span class="info-label">Name:</span>
+                            <span class="info-value">Mahit Mevada</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span class="info-value">mahit@example.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Location:</span>
+                            <span class="info-value">India</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Freelance:</span>
+                            <span class="info-value available">Available</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Let's Connect</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-cogs"></i> What I Know</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-tabs">
+                <button class="tab-btn active" data-tab="frontend">Frontend</button>
+                <button class="tab-btn" data-tab="backend">Backend</button>
+                <button class="tab-btn" data-tab="tools">Tools</button>
+                <button class="tab-btn" data-tab="design">Design</button>
+            </div>
+            <div class="skills-content">
+                <div class="tab-content active" id="frontend">
+                    <div class="skills-grid">
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
+                            <div class="skill-icon" style="--skill-color: #E44D26;">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h3>HTML5</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95" style="--skill-color: #E44D26;"></div>
+                            </div>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="skill-icon" style="--skill-color: #1572B6;">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <h3>CSS3 / SCSS</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90" style="--skill-color: #1572B6;"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="skill-icon" style="--skill-color: #F7DF1E;">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <h3>JavaScript</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85" style="--skill-color: #F7DF1E;"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="skill-icon" style="--skill-color: #61DAFB;">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h3>React.js</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80" style="--skill-color: #61DAFB;"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="skill-icon" style="--skill-color: #7952B3;">
+                                <i class="fab fa-bootstrap"></i>
+                            </div>
+                            <h3>Bootstrap</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88" style="--skill-color: #7952B3;"></div>
+                            </div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                            <div class="skill-icon" style="--skill-color: #06B6D4;">
+                                <i class="fas fa-wind"></i>
+                            </div>
+                            <h3>Tailwind CSS</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="82" style="--skill-color: #06B6D4;"></div>
+                            </div>
+                            <span class="skill-percent">82%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="backend">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon" style="--skill-color: #339933;">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <h3>Node.js</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75" style="--skill-color: #339933;"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon" style="--skill-color: #777BB4;">
+                                <i class="fab fa-php"></i>
+                            </div>
+                            <h3>PHP</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70" style="--skill-color: #777BB4;"></div>
+                            </div>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon" style="--skill-color: #4DB33D;">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3>MongoDB</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="72" style="--skill-color: #4DB33D;"></div>
+                            </div>
+                            <span class="skill-percent">72%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon" style="--skill-color: #336791;">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3>SQL</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="68" style="--skill-color: #336791;"></div>
+                            </div>
+                            <span class="skill-percent">68%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="tools">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon" style="--skill-color: #F05032;">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <h3>Git & GitHub</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88" style="--skill-color: #F05032;"></div>
+                            </div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon" style="--skill-color: #007ACC;">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>VS Code</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92" style="--skill-color: #007ACC;"></div>
+                            </div>
+                            <span class="skill-percent">92%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon" style="--skill-color: #CB3837;">
+                                <i class="fab fa-npm"></i>
+                            </div>
+                            <h3>NPM</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80" style="--skill-color: #CB3837;"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon" style="--skill-color: #2496ED;">
+                                <i class="fab fa-docker"></i>
+                            </div>
+                            <h3>Docker</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="60" style="--skill-color: #2496ED;"></div>
+                            </div>
+                            <span class="skill-percent">60%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="design">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon" style="--skill-color: #F24E1E;">
+                                <i class="fab fa-figma"></i>
+                            </div>
+                            <h3>Figma</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85" style="--skill-color: #F24E1E;"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon" style="--skill-color: #31A8FF;">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h3>Photoshop</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="78" style="--skill-color: #31A8FF;"></div>
+                            </div>
+                            <span class="skill-percent">78%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon" style="--skill-color: #FF61F6;">
+                                <i class="fas fa-vector-square"></i>
+                            </div>
+                            <h3>Illustrator</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="72" style="--skill-color: #FF61F6;"></div>
+                            </div>
+                            <span class="skill-percent">72%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon" style="--skill-color: #0ACF83;">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h3>UI/UX Design</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80" style="--skill-color: #0ACF83;"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-briefcase"></i> My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="design">UI Design</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web" data-aos="fade-up">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link" title="Source Code"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <h3>E-Commerce Platform</h3>
+                        <p>Full-stack e-commerce solution with payment integration, user authentication, and admin dashboard.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="design" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="--ph-color: #8B5CF6;">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>Figma</span>
+                            <span>UI/UX</span>
+                        </div>
+                        <h3>Banking App UI</h3>
+                        <p>Modern mobile banking application design with intuitive user experience and clean interface.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="--ph-color: #10B981;">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>API</span>
+                            <span>Chart.js</span>
+                        </div>
+                        <h3>Analytics Dashboard</h3>
+                        <p>Real-time data analytics dashboard with interactive charts and comprehensive reporting.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="mobile" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="--ph-color: #F59E0B;">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                        </div>
+                        <h3>Food Delivery App</h3>
+                        <p>Cross-platform food delivery application with real-time tracking and payment system.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="--ph-color: #EF4444;">
+                            <i class="fas fa-blog"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>Next.js</span>
+                            <span>MDX</span>
+                            <span>Tailwind</span>
+                        </div>
+                        <h3>Tech Blog Platform</h3>
+                        <p>SEO-optimized blog platform with markdown support, categories, and newsletter integration.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="design" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="--ph-color: #EC4899;">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>Figma</span>
+                            <span>Prototype</span>
+                        </div>
+                        <h3>Portfolio Template</h3>
+                        <p>Modern portfolio template design with multiple layout options and dark/light themes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-route"></i> My Journey</span>
+                <h2 class="section-title">Experience & Education</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge work">Work</div>
+                        <span class="timeline-date">2023 - Present</span>
+                        <h3>Senior Web Developer</h3>
+                        <h4>Freelance / Self-Employed</h4>
+                        <p>Leading web development projects for international clients. Building scalable applications using modern frameworks and best practices.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge work">Work</div>
+                        <span class="timeline-date">2022 - 2023</span>
+                        <h3>Frontend Developer</h3>
+                        <h4>Tech Startup</h4>
+                        <p>Developed responsive web applications, collaborated with design teams, and implemented pixel-perfect UI components.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge education">Education</div>
+                        <span class="timeline-date">2021 - 2022</span>
+                        <h3>Web Development Bootcamp</h3>
+                        <h4>Online Certification</h4>
+                        <p>Completed intensive full-stack web development program covering modern JavaScript, React, Node.js, and database management.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge education">Education</div>
+                        <span class="timeline-date">2019 - 2023</span>
+                        <h3>Bachelor's in Computer Science</h3>
+                        <h4>University</h4>
+                        <p>Studied computer science fundamentals, data structures, algorithms, and software engineering principles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-quote-left"></i> Testimonials</span>
+                <h2 class="section-title">What Clients Say</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"Mahit delivered an exceptional website that exceeded our expectations. His attention to detail and professional approach made the entire process smooth."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fas fa-user"></i></div>
+                            <div class="author-info">
+                                <h4>Rajesh Kumar</h4>
+                                <span>Business Owner</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"Working with Mahit was a great experience. He understood our requirements perfectly and delivered a modern, responsive website on time."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fas fa-user"></i></div>
+                            <div class="author-info">
+                                <h4>Priya Sharma</h4>
+                                <span>Startup Founder</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"Excellent developer with strong design skills. Mahit transformed our outdated website into a stunning modern platform. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fas fa-user"></i></div>
+                            <div class="author-info">
+                                <h4>Alex Johnson</h4>
+                                <span>Marketing Director</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots" id="sliderDots"></div>
+                    <button class="slider-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-envelope"></i> Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Let's work together!</h3>
+                    <p>Have a project in mind? I'd love to hear about it. Let's discuss how we can bring your ideas to life.</p>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:mahitmevada0017@gmail.com">mahitmevada0017@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+XXXXXXXXXX">XXXXXXXXXX</a>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Location</h4>
+                                <span>Gujarat, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required placeholder=" ">
+                                <label for="name">Your Name</label>
+                                <span class="form-icon"><i class="fas fa-user"></i></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required placeholder=" ">
+                                <label for="email">Your Email</label>
+                                <span class="form-icon"><i class="fas fa-envelope"></i></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required placeholder=" ">
+                            <label for="subject">Subject</label>
+                            <span class="form-icon"><i class="fas fa-tag"></i></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                            <label for="message">Your Message</label>
+                            <span class="form-icon"><i class="fas fa-comment-dots"></i></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div class="form-success" id="formSuccess">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Message Sent!</h3>
+                        <p>Thank you for reaching out. I'll get back to you soon!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+                <path fill="currentColor" d="M0,40 C150,80 350,0 500,40 C650,80 800,20 1000,50 C1200,80 1350,30 1440,50 L1440,100 L0,100 Z"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="nav-logo">
+                        <span class="logo-bracket">&lt;</span>
+                        <span class="logo-text">Mahit</span>
+                        <span class="logo-dot">.</span>
+                        <span class="logo-text2">dev</span>
+                        <span class="logo-bracket">/&gt;</span>
+                    </a>
+                    <p>Crafting digital experiences with passion and precision. Let's build something amazing together.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">SEO Optimization</a></li>
+                        <li><a href="#">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updates on my latest projects and tech insights.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mahit Mevada. All Rights Reserved.</p>
+                <p>Designed & Built with <i class="fas fa-heart" style="color: #EF4444;"></i> by Mahit</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
